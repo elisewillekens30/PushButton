@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GameLoop Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HTML5 GameLoop Template">
+    <meta name="author" content="UI Programming">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/push.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="pageLoaded()">
+    <section>
+        <h1>Super Mario 256</h1>  
+    </section>
+    <table>
+        <tbody>
+            <tr>
+                <td><button onmousedown="eventbut('top')" id="top" class="button yellow round">top</button></td>
+                <td><button onmousedown="eventbut('down')" id="down" class="button blue round">down</button></td>
+                <td><button onmousedown="eventbut('right')" id="left" class="button red round">left</button></td>
+                <td><button onmousedown="eventbut('left')" id="right" class="button green round">right</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <canvas id="game" width="1300" height="600" style="border: black 1px solid;">
+        Oops! looks like your browser does not support canvas tag
+    </canvas>
+    <button><a href="GameLoop.html">Play Again</a></button>
+</body>
+    <!--JavaScript File-->
+    <script src="./js/script.js"></script>
+
+</html>
